@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Produto</title>
+    <link rel="stylesheet" href="./CSS/formulario.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <img src="./img/logo.png" alt="" class="logo" />
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./adicionarProduto.html">Adicionar produto</a></li>
+          <li><a href="./deletarProduto.html">Deletar produto</a></li>
+          <li><a href="./editarProduto.html">Editar produto</a></li>
+          <li><a href="./editarProdutoParcialmente.html">Editar produto parcialmente</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="form-container">
+      <h1>Editar produto parcialmente</h1>
+      <form id="produto-form">
+        <label for="id">ID</label>
+        <input
+          type="number"
+          id="idProduto"
+          name="id"
+          required
+          placeholder="Digite o ID do Produto"
+        />
+
+        <label for="selecionar">Selecionar campo</label>
+        <select name="selectCampo" id="selectCampo">
+          <option value="title">titulo</option>
+          <option value="price">preço</option>
+          <option value="description">descrição</option>
+          <option value="image">imagem</option>
+          <option value="category">categoria</option>
+        </select>
+
+        <label for="valorCampo">Digite o conteúdo do campo escolhido</label>
+        <input
+          type="text"
+          id="valorCampo"
+          name="valorCampo"
+          required
+          placeholder="Digite o conteúdo do campo escolhido"
+        />
+
+        <button type="submit" id="botaoEnviar_editar">Adicionar Produto</button>
+      </form>
+    </div>
+
+    <script src="js/patch.js"></script>
+  </body>
+</html>
